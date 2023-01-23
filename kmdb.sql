@@ -135,7 +135,6 @@ id INTEGER PRIMARY KEY AUTOINCREMENT,
 name TEXT
 );
 
-
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
