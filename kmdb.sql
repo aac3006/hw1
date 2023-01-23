@@ -141,11 +141,11 @@ name TEXT
 -- TODO!
 
 INSERT INTO studios (
-name,
+name
 )
 VALUES (
 "Warner Bros."
-)
+);
 
 INSERT INTO movies (
 title, year_released, mpaa_rating, studio_id
@@ -201,8 +201,7 @@ VALUES
 
 SELECT movies.title, movies.year_released, movies.mpaa_rating, studios.name
 FROM movies
-INNER JOIN studios ON studios.id = movies.studio_id
-WHERE studios.name = "Warner Bros."
+INNER JOIN studios ON studios.id = movies.studio_id;
 
 -- Prints a header for the cast output
 .print ""
